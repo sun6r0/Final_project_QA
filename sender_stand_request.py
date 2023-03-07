@@ -17,7 +17,7 @@ t = response.json()["track"]
 # Запрос на заказ по номеру трека
 def get_new_order_track():
     return requests.get(configuration.URL_SERVICE + configuration.GET_ORDER_TRACK,
-                        params={"t": t})
+                        params={"t": track})
 
 
 response = get_new_order_track()
